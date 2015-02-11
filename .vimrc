@@ -1,7 +1,5 @@
-" Pathogen plugin loader
 execute pathogen#infect()
 
-" Backup and swap file directories
 set backupdir=/mnt/media/Trash/Vim/
 set directory=/mnt/media/Trash/Vim/
 
@@ -9,7 +7,7 @@ set number          " Show line numbers
 "set laststatus=2    " Always shows statusline
 set mouse=a         " Enables mouse
 set nowrap
-set tabstop=8       " How many columns a tab counts for
+set tabstop=8
 "set expandtab       " Produces the appropriate number of spaces in place of tabs
 "set shiftwidth=4    " Spaces for each step of (auto)indent
 "set softtabstop=4   " How many columns used when you hit Tab in insert mode
@@ -28,7 +26,6 @@ nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
 nnoremap <F1> :NERDTreeTabsToggle<CR>
 
-" Colors, google if unaware.
 hi NonText      cterm=NONE ctermbg=NONE  ctermfg=0
 hi VertSplit    cterm=NONE ctermbg=0     ctermfg=0
 hi SignColumn   cterm=NONE ctermbg=NONE  ctermfg=7
@@ -57,8 +54,7 @@ hi SyntasticWarningLine         ctermbg=NONE ctermfg=NONE
 hi SyntasticStyleErrorLine      ctermbg=NONE ctermfg=NONE
 hi SyntasticStyleWarningLine    ctermbg=NONE ctermfg=NONE
 
-" Airline statusbar settings. Documentation for all this shit
-" either online or locally at doc/airline.txt. :-)
+" Airline
 let g:airline_theme = "mossepolor"
 let g:airline_powerline_fonts = 1
 
